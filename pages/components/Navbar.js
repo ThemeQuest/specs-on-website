@@ -10,7 +10,7 @@ function Navbar() {
                 <span className="self-center text-lg font-semibold whitespace-nowrap dark:text-white">SpecsOn</span>
             </a>
             <div className="flex md:order-2">
-                <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>
+                <button type="button" className="text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 bg-gradient-to-r from-indigo-500 to-purple-500">Get started</button>
                 <button data-collapse-toggle="mobile-menu-4" type="button" className="md:hidden text-gray-500 hover:bg-gray-100focus:outline-none focus:ring-2 focus:ring-gray-200 rounded-lg text-sm p-2 inline-flex items-center dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-4" aria-expanded="false"
                 onClick={() => setNavbarOpen(!navbarOpen)}>
                     <span className="sr-only">Open main menu</span>
