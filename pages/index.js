@@ -14,7 +14,7 @@ export default function Home() {
       <Navbar/>
       <Banner/>  
         Content
-        <Footer />
+      <Footer />
     </>
   )
 }
