@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useState } from 'react'
 
 function Navbar() {
@@ -5,10 +6,12 @@ function Navbar() {
     return (
         <nav className="bg-white border-gray-200 px-2 sm:px-4 py-6 rounded dark:bg-gray-800 border-b">
             <div className="container mx-auto flex flex-wrap items-center justify-between">
-            <a href="#" className="flex">
-                {/* add svg here */}
-                <span className="self-center text-lg font-semibold whitespace-nowrap dark:text-white">SpecsOn</span>
-            </a>
+            <Link href="#home">
+                <a className="flex">
+                    {/* add svg here */}
+                    <span className="self-center text-lg font-semibold whitespace-nowrap dark:text-white">SpecsOn</span>
+                </a>
+            </Link>
             <div className="flex md:order-2">
                 <button type="button" className="text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 bg-gradient-to-r from-indigo-500 to-purple-500">Get started</button>
                 <button data-collapse-toggle="mobile-menu-4" type="button" className="md:hidden text-gray-500 hover:bg-gray-100focus:outline-none focus:ring-2 focus:ring-gray-200 rounded-lg text-sm p-2 inline-flex items-center dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-4" aria-expanded="false"
@@ -22,16 +25,24 @@ function Navbar() {
                 id="mobile-menu-4">
                     <ul className="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
                         <li>
-                            <a href="#" className="bg-blue-700 md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-blue-700 md:p-0 rounded dark:text-white" aria-current="page">Home</a>
+                            <Link href="#home">
+                                <a className="bg-blue-700 md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-blue-700 md:p-0 rounded dark:text-white" aria-current="page">Home</a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#" className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
+                            <Link href="#about">
+                                <a className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#" className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                            <Link href="#pricing">
+                                <a className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#" className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                            <Link href="#contact">
+                                <a className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
