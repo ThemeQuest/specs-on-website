@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 
 function Banner() {
     return (
-        <section className="banner flex flex-col items-center text-center justify-center pt-28 lg:py-28 lg:mb-0 mb-8">
+        <section className="banner flex flex-col items-center text-center justify-center pt-28 lg:py-28 lg:mb-0 mb-24">
           <div className="max-w-xl md:max-w-5xl text-lg">
             <h1 className="banner__heading mb-8 text-5xl md:text-6xl">
               <span className="flex flex-col lg:flex-row text-center justify-center text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
