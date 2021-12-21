@@ -15,7 +15,7 @@ export default function Home() {
       <Navbar/>
       <Banner/>
       <Featured/>
-      <Footer />
+      <Footer/>
     </>
   )
 }
