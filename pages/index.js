@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Navbar from './components/Navbar'
 import Banner from './components/Banner';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 import Featured from './components/Featured';
 
 export default function Home() {
